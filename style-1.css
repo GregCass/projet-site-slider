@@ -38,7 +38,12 @@ text-decoration: none;
 main {
     margin-top:100px;
 }
-
+main h1 {text-align: center;
+}
+main p{
+    text-align: center;
+    
+}
 /* ======== SLIDER CSS ====== */
 
 div#slider { 
@@ -69,4 +74,15 @@ div#slider figure {
     75% { left: -300%; }
     95% { left: -300%; }
     100% { left: -400%; }
+  }
+
+  section {
+      width:100%;
+      text-align: center;
+      padding: 50px;
+  }
+  section h2 {
+      font-size:18px;
+    font-weight: bold;
+
   }
