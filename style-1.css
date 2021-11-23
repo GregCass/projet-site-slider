@@ -1,0 +1,39 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+#menu{
+    display:block;
+    margin:0;
+    padding: 10px 10px;
+    box-sizing:border-box;
+    width:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    text-align: right;
+    background-color: black;
+}
+#menu nav ul {
+    padding:0;
+    margin:0;
+}
+#menu li {
+    padding:0;
+    margin:0;
+}
+#menu .menuLiens {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 10px;
+    font-size:22px;
+}
+#menu .menuLiens a{color: white;
+text-decoration: none;
+}
+
+/* ============= */
+
+main {
+    margin-top:100px;
+}
