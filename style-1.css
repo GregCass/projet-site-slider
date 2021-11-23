@@ -13,6 +13,7 @@ html, body{
     top:0;
     text-align: right;
     background-color: black;
+    z-index: 2;
 }
 #menu nav ul {
     padding:0;
@@ -32,8 +33,40 @@ html, body{
 text-decoration: none;
 }
 
-/* ============= */
+/* ===== MAIN ======== */
 
 main {
     margin-top:100px;
 }
+
+/* ======== SLIDER CSS ====== */
+
+div#slider { 
+    width: 80%; 
+    margin:auto;
+    max-width: 1500px;
+    overflow: hidden 
+} 
+div#slider figure {
+    position: relative; 
+    z-index:1;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+  }
+  div#slider figure img { width: 20%; height: auto; float: left; }
+
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
